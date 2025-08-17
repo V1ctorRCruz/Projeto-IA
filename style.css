@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    transition: background-color 0.5s;
+}
+
+.caixa-principal {
+    background-color: white;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 700px;
+    width: 90%;
+    text-align: center;
+}
+
+.caixa-introducao {
+    font-size: 16px;
+    color: #333;
+    background: #f9f9f9;
+    border-left: 5px solid #4CAF50;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.caixa-perguntas {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.alternativa {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: 250px;
+}
+
+.alternativa:hover {
+    background-color: #d0d0d0;
+}
+
+#botao-reiniciar, #botaoComecar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#botao-reiniciar:hover, #botaoComecar:hover {
+    background-color: #45a049;
+}
+
+.resultado-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.resultado-card.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.texto-resultado {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.resultado-positivo {
+    background-color: #d4f5d4;
+}
+
+.resultado-equilibrado {
+    background-color: #fff7d4;
+}
+
+.resultado-negativo {
+    background-color: #f5d4d4;
+}

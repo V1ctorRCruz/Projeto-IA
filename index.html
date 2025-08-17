@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Você decide o futuro da IA</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="caixa-principal">
+        <h1>Você decide o futuro da IA</h1>
+
+        <div class="caixa-introducao">
+            <p>
+                A inteligência artificial já está moldando o mundo ao nosso redor — desde recomendações de filmes
+                até diagnósticos médicos complexos. Mas o que o futuro reserva para essa tecnologia?
+                Este quiz interativo vai explorar suas opiniões e percepções sobre a IA, simulando escolhas
+                que podem influenciar o rumo dessa história. 
+            </p>
+            <p>
+                Ao final, você descobrirá se seu perfil é mais otimista, equilibrado ou cético em relação
+                ao avanço da inteligência artificial.
+            </p>
+        </div>
+
+        <div class="caixa-nome">
+            <label for="nomeUsuario">Digite seu nome:</label>
+            <input type="text" id="nomeUsuario" placeholder="Seu nome" />
+            <button id="botaoComecar">Começar</button>
+        </div>
+
+        <div class="quiz-area" style="display:none;">
+            <div class="caixa-perguntas"></div>
+            <div class="caixa-alternativas"></div>
+        </div>
+
+        <div class="caixa-resultado" style="display:none;">
+            <div class="resultado-card">
+                <h2 id="titulo-resultado"></h2>
+                <p class="texto-resultado"></p>
+            </div>
+        </div>
+
+        <button id="botao-reiniciar" style="display:none;">Reiniciar Quiz</button>
+    </div>
+
+    <script type="module" src="./js/script.js"></script>
+</body>
+</html>
